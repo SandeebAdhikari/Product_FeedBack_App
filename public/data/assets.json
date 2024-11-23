@@ -1,0 +1,46 @@
+{
+  "shared": {
+    "mobile": {
+      "closeIcon": "/assets/shared/mobile/icon-close.svg",
+      "hamburgerIcon": "/assets/shared/mobile/icon-hamburger.svg",
+      "arrowDownIcon": "/assets/shared/mobile/icon-arrow-down.svg",
+      "arrowLeftIcon": "/assets/shared/mobile/icon-arrow-left.svg",
+      "arrowUpIcon": "/assets/shared/mobile/icon-arrow-up.svg",
+      "checkIcon": "/assets/shared/mobile/icon-check.svg",
+      "commentsIcon": "/assets/shared/mobile/icon-comments.svg",
+      "editFeedbackIcon": "/assets/shared/mobile/icon-edit-feedback.svg",
+      "newFeedbackIcon": "/assets/shared/mobile/icon-new-feedback.svg",
+      "plusIcon": "/assets/shared/mobile/icon-plus.svg"
+    }
+  },
+  "suggestions": {
+    "desktop": {
+      "backgroundHeader": "/assets/suggestions/desktop/background-header.png"
+    },
+    "mobile": {
+      "backgroundHeader": "/assets/suggestions/mobile/background-header.png"
+    },
+    "tablet": {
+      "backgroundHeader": "/assets/suggestions/tablet/background-header.png"
+    },
+    "common": {
+      "suggestionsIcon": "/assets/suggestions/icon-suggestions.svg",
+      "illustrationEmpty": "/assets/suggestions/illustration-empty.svg"
+    }
+  },
+  "userImages": {
+    "anne": "/assets/user-images/image-anne.jpg",
+    "elijah": "/assets/user-images/image-elijah.jpg",
+    "george": "/assets/user-images/image-george.jpg",
+    "jackson": "/assets/user-images/image-jackson.jpg",
+    "james": "/assets/user-images/image-james.jpg",
+    "javier": "/assets/user-images/image-javier.jpg",
+    "judah": "/assets/user-images/image-judah.jpg",
+    "roxanne": "/assets/user-images/image-roxanne.jpg",
+    "ryan": "/assets/user-images/image-ryan.jpg",
+    "suzanne": "/assets/user-images/image-suzanne.jpg",
+    "thomas": "/assets/user-images/image-thomas.jpg",
+    "victoria": "/assets/user-images/image-victoria.jpg",
+    "zena": "/assets/user-images/image-zena.jpg"
+  }
+}
