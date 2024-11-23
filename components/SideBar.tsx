@@ -33,7 +33,7 @@ const SideBar = () => {
             Feature
           </div>
         </div>
-        <div className="mt-6 px-6 border rounded-[10px] bg-white h-[178px] flex flex-col items-center justify-center">
+        <div className="mt-6 px-6  border rounded-[10px] bg-white h-[178px] flex flex-col sm:flex-wrap items-center justify-center">
           <div className="flex w-full justify-between">
             <h1 className="text-h3 font-bold text-semiDarkNavy">Roadmap</h1>
             <p className="underline text-primaryBlue">View</p>
