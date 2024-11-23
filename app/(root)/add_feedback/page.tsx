@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-import Empty from "../../public/assets/suggestions/illustration-empty.svg";
+import Empty from "../../../public/assets/suggestions/illustration-empty.svg";
 
 const page = () => {
   return (
