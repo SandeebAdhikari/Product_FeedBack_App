@@ -24,6 +24,7 @@
       "backgroundHeader": "/assets/suggestions/tablet/background-header.png"
     },
     "common": {
+      "ovalIcon": "/assets/suggestions/Oval.svg",
       "suggestionsIcon": "/assets/suggestions/icon-suggestions.svg",
       "illustrationEmpty": "/assets/suggestions/illustration-empty.svg"
     }

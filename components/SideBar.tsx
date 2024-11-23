@@ -34,11 +34,33 @@ const SideBar = () => {
           </div>
         </div>
         <div className="mt-6 px-6 border rounded-[10px] bg-white h-[178px] flex flex-col items-center justify-center">
-          <div className="flex justify-between w-full">
-            <h1>Roadmap</h1>
+          <div className="flex w-full justify-between">
+            <h1 className="text-h3 font-bold text-semiDarkNavy">Roadmap</h1>
             <p className="underline text-primaryBlue">View</p>
           </div>
-          <div className=""></div>
+          <ul className="flex flex-col w-full gap-2">
+            <li className="mt-[24px] flex">
+              <ResponsiveImage folder="suggestions" imageKey="ovalIcon" />
+              <div className="ml-4 flex justify-between w-full">
+                <h1 className="text-darkNavy">Planned</h1>
+                <h1 className="font-bold">2</h1>
+              </div>
+            </li>
+            <li className="flex">
+              <ResponsiveImage folder="suggestions" imageKey="ovalIcon" />
+              <div className="ml-4 flex justify-between w-full">
+                <h1 className="text-darkNavy">In-Progress</h1>
+                <h1 className="font-bold">3</h1>
+              </div>
+            </li>
+            <li className="flex">
+              <ResponsiveImage folder="suggestions" imageKey="ovalIcon" />
+              <div className="ml-4 flex justify-between w-full">
+                <h1 className="text-darkNavy">Live</h1>
+                <h1 className="font-bold">1</h1>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
