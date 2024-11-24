@@ -1,7 +1,7 @@
 import ButtonFeedback from "@/components/ButtonFeedback";
 import FeedbackCard from "@/components/FeedbackCard";
 import CommentCard from "@/components/CommentCard";
-import Image from "next/image";
+
 import UserImage1 from "@/public/assets/user-images/image-elijah.jpg";
 import UserImage2 from "@/public/assets/user-images/image-james.jpg";
 import UserImage3 from "@/public/assets/user-images/image-anne.jpg";
