@@ -7,7 +7,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="mx-[165px] mt-[94px] flex gap-[30px]">
+    <div className="mt-[94px] flex gap-[30px]">
       <SideBar />
       <div className="flex flex-col">
         <NavBar />

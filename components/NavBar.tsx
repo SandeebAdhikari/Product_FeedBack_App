@@ -19,7 +19,13 @@ const NavBar = () => {
     "Least Comments",
   ];
 
-  const handleOptionClick = (option) => {
+  interface NavBarProps {}
+
+  interface Option {
+    option: string;
+  }
+
+  const handleOptionClick = (option: string): void => {
     setSelectedOption(option);
     setIsOpen(false);
   };

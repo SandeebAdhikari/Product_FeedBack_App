@@ -23,7 +23,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${jost.variable}`}>{children}</body>
+      <body
+        className={`${jost.variable} w-full flex items-center justify-center`}
+      >
+        {children}
+      </body>
     </html>
   );
 }

@@ -6,7 +6,7 @@ interface ButtonFeedbackProps {
 
 const ButtonFeedback: React.FC<ButtonFeedbackProps> = ({ text }) => {
   return (
-    <button className="bg-primaryPurple w-[158px] h-[44px] rounded-[10px] font-bold text-h4 text-white">
+    <button className="bg-primaryPurple w-[158px] h-[44px] rounded-[10px] font-bold text-h4 text-white hover:bg-btn-hover">
       {text}
     </button>
   );
