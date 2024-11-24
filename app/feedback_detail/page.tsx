@@ -7,23 +7,13 @@ import UserImage2 from "@/public/assets/user-images/image-james.jpg";
 import UserImage3 from "@/public/assets/user-images/image-anne.jpg";
 import UserImage4 from "@/public/assets/user-images/image-ryan.jpg";
 import React from "react";
+import GoBackButton from "@/components/GoBackButton";
 
 const page = () => {
   return (
     <div className="mt-[76px] flex flex-col items-center mx-[306px]">
       <div className="flex w-full">
-        <button className="flex items-center justify-center gap-2">
-          <svg width="7" height="10" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M6 9L2 5l4-4"
-              stroke="#4661E6"
-              strokeWidth="2"
-              fill="none"
-              fillRule="evenodd"
-            />
-          </svg>
-          <h1 className="font-bold text-grayBlue text-h4">Go Back</h1>
-        </button>
+        <GoBackButton stroke="#4661E6" color="grayBlue" />
         <div className="ml-auto">
           <ButtonFeedback text="Edit Feedback" />
         </div>

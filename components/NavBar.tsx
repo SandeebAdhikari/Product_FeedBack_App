@@ -2,13 +2,13 @@
 import React, { useState } from "react";
 import ResponsiveImage from "./ResponsiveImage";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
-import DownArrow from "../public/assets/shared/icon-arrow-down.svg";
-import UpArrow from "../public/assets/shared/icon-arrow-up.svg";
-import TickIcon from "../public/assets/shared/icon-check.svg"; // Import your custom tick icon
+import TickIcon from "../public/assets/shared/icon-check.svg";
 import ButtonFeedback from "./ButtonFeedback";
 
 const NavBar = () => {
+  const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState("Most Upvotes");
 
@@ -19,19 +19,17 @@ const NavBar = () => {
     "Least Comments",
   ];
 
-  interface NavBarProps {}
-
-  interface Option {
-    option: string;
-  }
-
   const handleOptionClick = (option: string): void => {
     setSelectedOption(option);
     setIsOpen(false);
   };
 
+  const handleAddFeedback = () => {
+    router.push("/new_feedback");
+  };
+
   return (
-    <div className="w-[825px] h-[72px]  rounded-[10px] flex items-center bg-semiDarkNavy relative">
+    <div className="w-[825px] h-[72px] rounded-[10px] flex items-center bg-semiDarkNavy relative">
       <div className="ml-6 gap-4 flex justify-center">
         <div className="w-[23px] h-6">
           <ResponsiveImage folder="suggestions" imageKey="suggestionsIcon" />
@@ -40,11 +38,11 @@ const NavBar = () => {
         <h1 className="text-white text-h3 font-bold">6 Suggestions</h1>
       </div>
       <div
-        className="ml-[38px] flex w-[255px] items-center gap-2 relative "
+        className="ml-[38px] flex w-[255px] items-center gap-2 relative"
         onClick={() => setIsOpen(!isOpen)}
       >
         <h1 className="text-white text-h3">
-          Sort by: <strong>{selectedOption}</strong>{" "}
+          Sort by: <strong>{selectedOption}</strong>
         </h1>
         {isOpen ? (
           <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
@@ -84,7 +82,7 @@ const NavBar = () => {
           </div>
         )}
       </div>
-      <div className="mr-4 ml-auto">
+      <div className="mr-4 ml-auto" onClick={handleAddFeedback}>
         <ButtonFeedback text="+ Add Feedback" />
       </div>
     </div>

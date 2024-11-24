@@ -1,9 +1,16 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 
 import Empty from "../../../public/assets/suggestions/illustration-empty.svg";
+import { useRouter } from "next/navigation";
 
 const page = () => {
+  const router = useRouter();
+
+  const handleAddFeedback = () => {
+    router.push("/new_feedback");
+  };
   return (
     <div className="mt-6 w-full h-[550px] flex flex-col items-center justify-center gap-[54px] bg-white rounded-[10px]">
       <Image src={Empty} alt="Error Image" width={130} height={137} />
@@ -15,7 +22,10 @@ const page = () => {
           Got a suggestion? Found a bug that needs to be squashed? We love
           hearing about new ideas to improve our app.
         </p>
-        <button className="mt-12 bg-primaryPurple w-[158px] h-[44px] rounded-[10px] font-bold text-h4 text-white">
+        <button
+          className="mt-12 bg-primaryPurple w-[158px] h-[44px] rounded-[10px] font-bold text-h4 text-white"
+          onClick={handleAddFeedback}
+        >
           + Add Feedback
         </button>
       </div>

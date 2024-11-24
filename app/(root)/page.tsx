@@ -1,9 +1,10 @@
+"use client";
 import FeedbackCard from "@/components/FeedbackCard";
-import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
   return (
-    <div className="mt-6">
+    <div className="mt-6 ">
       <FeedbackCard />
     </div>
   );

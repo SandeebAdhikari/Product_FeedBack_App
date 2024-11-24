@@ -1,9 +1,16 @@
+"use client";
 import ButtonFeedback from "@/components/ButtonFeedback";
 import GoBackButton from "@/components/GoBackButton";
 import RoadMapCard from "@/components/RoadMapCard";
+import { useRouter } from "next/navigation";
 import React from "react";
 
 const page = () => {
+  const router = useRouter();
+
+  const handleAddFeedback = () => {
+    router.push("/new_feedback");
+  };
   return (
     <div className="flex flex-col w-[1110px] min-h-screen">
       <div className="mt-[78px] flex w-full h-[113px] bg-semiDarkNavy rounded-[10px] items-center justify-center">
@@ -11,7 +18,7 @@ const page = () => {
           <GoBackButton stroke="white" color="white" />
           <h1 className="mt-2 text-white text-h1 font-bold">Roadmap </h1>
         </div>
-        <div className="ml-auto mr-10">
+        <div className="ml-auto mr-10" onClick={handleAddFeedback}>
           <ButtonFeedback text="+ Add Feedback" />
         </div>
       </div>

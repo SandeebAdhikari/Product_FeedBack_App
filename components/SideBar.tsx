@@ -1,8 +1,15 @@
+"use client";
 import React from "react";
-import Image from "next/image";
+
 import ResponsiveImage from "./ResponsiveImage";
+import { useRouter } from "next/navigation";
 
 const SideBar = () => {
+  const router = useRouter();
+
+  const handleView = () => {
+    router.push("/roadmap");
+  };
   return (
     <div className="w-[255px] h-[529px]  rounded-[10px] overflow-hidden">
       <div className=" h-[115px] rounded-[10px] overflow-hidden inset-0 relative">
@@ -36,7 +43,12 @@ const SideBar = () => {
         <div className="mt-6 px-6 rounded-[10px] bg-white h-[178px] flex flex-col sm:flex-wrap items-center justify-center">
           <div className="flex w-full justify-between">
             <h1 className="text-h3 font-bold text-semiDarkNavy">Roadmap</h1>
-            <p className="underline text-primaryBlue">View</p>
+            <p
+              className="underline text-primaryBlue hover:cursor-pointer"
+              onClick={handleView}
+            >
+              View
+            </p>
           </div>
           <ul className="flex flex-col w-full gap-2">
             <li className="mt-[24px] flex">

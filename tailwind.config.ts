@@ -17,7 +17,7 @@ export default {
         darkBlue: "#3A4374",
         grayBlue: "#647196",
         coral: "#F49F85",
-        skyBlue: "#62BCFA",
+        skyBlue: "#CFD7FF",
         red: "#D73737",
         lightRed: "#E98888",
         lightNavy: "#656EA3",
