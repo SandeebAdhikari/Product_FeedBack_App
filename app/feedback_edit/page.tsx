@@ -41,6 +41,7 @@ const page = () => {
           Choose a category for your feedback
         </p>
         <Dropdown
+          height="240"
           options={optionsI}
           selectedOption={selectedOption}
           onSelect={setSelectedOption}
@@ -50,6 +51,7 @@ const page = () => {
           Change feature state
         </p>
         <Dropdown
+          height="191"
           options={optionsII}
           selectedOption={selectedOptionI}
           onSelect={setSelectedOptionI}

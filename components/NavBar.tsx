@@ -39,20 +39,36 @@ const NavBar = () => {
 
         <h1 className="text-white text-h3 font-bold">6 Suggestions</h1>
       </div>
-      <div className="ml-[38px] flex items-center relative">
+      <div
+        className="ml-[38px] flex w-[255px] items-center gap-2 relative "
+        onClick={() => setIsOpen(!isOpen)}
+      >
         <h1 className="text-white text-h3">
           Sort by: <strong>{selectedOption}</strong>{" "}
         </h1>
-        <Image
-          src={isOpen ? UpArrow : DownArrow}
-          alt=""
-          width={10}
-          height={7}
-          className="m-2 cursor-pointer"
-          onClick={() => setIsOpen(!isOpen)}
-        />
+        {isOpen ? (
+          <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M1 6l4-4 4 4"
+              stroke="white"
+              strokeWidth="2"
+              fill="none"
+              fillRule="evenodd"
+            />
+          </svg>
+        ) : (
+          <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M1 1l4 4 4-4"
+              stroke="white"
+              strokeWidth="2"
+              fill="none"
+              fillRule="evenodd"
+            />
+          </svg>
+        )}
         {isOpen && (
-          <div className="absolute top-16 left-0 bg-white w-[255px] h-[192px] rounded-[10px] shadow-lg z-10">
+          <div className="absolute top-16 left-0 bg-white w-full h-[192px] rounded-[10px] shadow-2xl z-10">
             {options.map((option) => (
               <div
                 key={option}

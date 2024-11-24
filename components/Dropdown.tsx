@@ -4,12 +4,14 @@ import Image from "next/image";
 import TickIcon from "../public/assets/shared/icon-check.svg";
 
 interface CategoryDropdownProps {
+  height?: string;
   options: string[];
   selectedOption: string;
   onSelect: (option: string) => void;
 }
 
 const CategoryDropdown: React.FC<CategoryDropdownProps> = ({
+  height,
   options,
   selectedOption,
   onSelect,
@@ -23,7 +25,7 @@ const CategoryDropdown: React.FC<CategoryDropdownProps> = ({
 
   return (
     <div
-      className="relative w-full px-6 flex items-center justify-between h-[48px] bg-lighterPeach rounded-[10px] p-2 hover:cursor-pointer"
+      className={`relative w-full px-6 flex items-center justify-between h-[48px] bg-lighterPeach rounded-[10px] p-2 hover:cursor-pointer `}
       onClick={() => setIsOpen(!isOpen)}
     >
       <h1 className="text-body2 text-grayBlue">{selectedOption}</h1>
@@ -49,7 +51,7 @@ const CategoryDropdown: React.FC<CategoryDropdownProps> = ({
         </svg>
       )}
       {isOpen && (
-        <div className="absolute top-16 left-0 bg-white w-full h-[240px] rounded-[10px] shadow-2xl z-10">
+        <div className="absolute top-16 left-0 bg-white w-full h-[${height}px] rounded-[10px] shadow-2xl z-10">
           {options.map((option) => (
             <div
               key={option}

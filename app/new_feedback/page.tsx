@@ -4,6 +4,7 @@ import Image from "next/image";
 import NewIcon from "../../public/assets/shared/icon-new-feedback.svg";
 import ButtonFeedback from "@/components/ButtonFeedback";
 import Dropdown from "@/components/Dropdown";
+import GoBackButton from "@/components/GoBackButton";
 
 const page = () => {
   const [selectedOption, setSelectedOption] = useState("Feature");
@@ -11,18 +12,7 @@ const page = () => {
 
   return (
     <div className="mt-[92px] mb-[187px] w-[540px]">
-      <button className="flex items-center justify-center gap-2">
-        <svg width="7" height="10" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M6 9L2 5l4-4"
-            stroke="#4661E6"
-            strokeWidth="2"
-            fill="none"
-            fillRule="evenodd"
-          />
-        </svg>
-        <h1 className="font-bold text-grayBlue text-h4">Go Back</h1>
-      </button>
+      <GoBackButton stroke="#4661E6" color="grayBlue" />
       <div className="mt-10 w-[540px] h-[685px] bg-white rounded-[10px] px-8 relative ">
         <Image
           src={NewIcon}

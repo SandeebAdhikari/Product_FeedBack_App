@@ -30,11 +30,11 @@ const FeedbackCard = () => {
         <p className="text-body1 text-grayBlue mt-1">
           Easier to search for solutions based on a specific stack.
         </p>
-        <h1 className="mt-3 w-[111px] h-[30px] font-semibold text-primaryPurple bg-lightBlue flex items-center justify-center rounded-[10px]">
+        <div className="mt-4 bg-lightBlue rounded-[10px] px-[16px] py-[5px] text-center text-primaryBlue inline-flex font-bold">
           Enhancement
-        </h1>
+        </div>
       </div>
-      <div className="flex ml-[263px] gap-2">
+      <div className="flex items-center ml-[263px] gap-2">
         <Image src={Comment} alt="Comment Icon" width={18} height={16} />
         <h1 className="font-bold text-body1 ">2</h1>
       </div>
