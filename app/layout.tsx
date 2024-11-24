@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Jost } from "next/font/google";
 import "./globals.css";
+import { FeedbackProvider } from "@/context/FeedbackContext";
 
 const jost = Jost({
   subsets: ["latin"],
@@ -26,7 +27,7 @@ export default function RootLayout({
       <body
         className={`${jost.variable} w-full flex items-center justify-center`}
       >
-        {children}
+        <FeedbackProvider>{children}</FeedbackProvider>
       </body>
     </html>
   );
