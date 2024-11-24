@@ -13,7 +13,8 @@ const GoBackButton: React.FC<GoBackButtonProps> = ({ stroke, color }) => {
   const pathname = usePathname();
 
   const handleGoBack = () => {
-    if (pathname === "/feedback_detail") {
+    const id = "someId";
+    if (pathname === `/feedback_detail/${id}`) {
       router.push("/");
     } else if (pathname === "/new_feedback") {
       router.push("/");

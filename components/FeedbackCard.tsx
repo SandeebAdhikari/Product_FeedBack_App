@@ -23,12 +23,7 @@ const FeedbackCard: React.FC<FeedbackCardProps> = ({
   comments,
   status,
 }) => {
-  const router = useRouter();
   const [isClicked, setIsClicked] = useState(false);
-
-  const handleFeedbackDetail = () => {
-    router.push(`/feedback_detail/${id}`);
-  };
 
   return (
     <div className="w-[825px] h-[151px] px-8 py-7 rounded-[10px] bg-white flex items-center justify-center hover:cursor-pointer mb-5">
@@ -71,10 +66,7 @@ const FeedbackCard: React.FC<FeedbackCardProps> = ({
           {category}
         </div>
       </div>
-      <div
-        className="flex items-center ml-[263px] gap-2"
-        onClick={handleFeedbackDetail}
-      >
+      <div className="flex items-center ml-[263px] gap-2">
         <Image src={Comment} alt="Comment Icon" width={18} height={16} />
         <h1 className="font-bold text-body1 ">{comments}</h1>
       </div>
