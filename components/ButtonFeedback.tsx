@@ -2,6 +2,8 @@ import React from "react";
 
 interface ButtonFeedbackProps {
   text: string;
+
+  onClick?: () => void;
 }
 
 const ButtonFeedback: React.FC<ButtonFeedbackProps> = ({ text }) => {

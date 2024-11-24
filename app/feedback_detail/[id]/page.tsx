@@ -1,12 +1,12 @@
 "use client";
 import { useParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 import FeedbackCard from "@/components/FeedbackCard";
 import CommentCard from "@/components/CommentCard";
 import GoBackButton from "@/components/GoBackButton";
 import ButtonFeedback from "@/components/ButtonFeedback";
 import data from "../../../public/data/data.json";
-import { useRouter } from "next/navigation";
 
 const FeedbackDetail = () => {
   const { id } = useParams();
@@ -24,8 +24,13 @@ const FeedbackDetail = () => {
       </div>
     );
   }
+
   const handleGoBack = () => {
     router.push("/");
+  };
+
+  const handleEditFeedBack = () => {
+    router.push(`/feedback_edit/${id}`);
   };
 
   return (
@@ -35,7 +40,7 @@ const FeedbackDetail = () => {
           <GoBackButton stroke="#4661E6" color="grayBlue" />
         </div>
 
-        <div className="ml-auto">
+        <div className="ml-auto" onClick={handleEditFeedBack}>
           <ButtonFeedback text="Edit Feedback" />
         </div>
       </div>
