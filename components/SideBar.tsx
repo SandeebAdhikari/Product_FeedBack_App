@@ -4,7 +4,7 @@ import ResponsiveImage from "./ResponsiveImage";
 
 const SideBar = () => {
   return (
-    <div className="w-[255px] h-[529px] border rounded-[10px] overflow-hidden">
+    <div className="w-[255px] h-[529px]  rounded-[10px] overflow-hidden">
       <div className=" h-[115px] rounded-[10px] overflow-hidden inset-0 relative">
         <ResponsiveImage folder="suggestions" imageKey="backgroundHeader" />
         <div className=" absolute mt-[62px] ml-[24px] bottom-[24px] w-[160px] h-[51px]">
@@ -33,7 +33,7 @@ const SideBar = () => {
             Feature
           </div>
         </div>
-        <div className="mt-6 px-6  border rounded-[10px] bg-white h-[178px] flex flex-col sm:flex-wrap items-center justify-center">
+        <div className="mt-6 px-6 rounded-[10px] bg-white h-[178px] flex flex-col sm:flex-wrap items-center justify-center">
           <div className="flex w-full justify-between">
             <h1 className="text-h3 font-bold text-semiDarkNavy">Roadmap</h1>
             <p className="underline text-primaryBlue">View</p>

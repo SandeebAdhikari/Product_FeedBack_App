@@ -6,6 +6,7 @@ import Image from "next/image";
 import DownArrow from "../public/assets/shared/icon-arrow-down.svg";
 import UpArrow from "../public/assets/shared/icon-arrow-up.svg";
 import TickIcon from "../public/assets/shared/icon-check.svg"; // Import your custom tick icon
+import ButtonFeedback from "./ButtonFeedback";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +25,7 @@ const NavBar = () => {
   };
 
   return (
-    <div className="w-[825px] h-[72px] border rounded-[10px] flex items-center bg-semiDarkNavy relative">
+    <div className="w-[825px] h-[72px]  rounded-[10px] flex items-center bg-semiDarkNavy relative">
       <div className="ml-6 gap-4 flex justify-center">
         <div className="w-[23px] h-6">
           <ResponsiveImage folder="suggestions" imageKey="suggestionsIcon" />
@@ -61,9 +62,9 @@ const NavBar = () => {
           </div>
         )}
       </div>
-      <button className="ml-auto mr-4 bg-primaryPurple w-[158px] h-[44px] rounded-[10px] font-bold text-h4 text-white">
-        + Add Feedback
-      </button>
+      <div className="mr-4 ml-auto">
+        <ButtonFeedback text="+ Add Feedback" />
+      </div>
     </div>
   );
 };

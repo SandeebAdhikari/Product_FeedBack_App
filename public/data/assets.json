@@ -1,6 +1,6 @@
 {
   "shared": {
-    "mobile": {
+    "desktop": {
       "closeIcon": "/assets/shared/mobile/icon-close.svg",
       "hamburgerIcon": "/assets/shared/mobile/icon-hamburger.svg",
       "arrowDownIcon": "/assets/shared/mobile/icon-arrow-down.svg",
